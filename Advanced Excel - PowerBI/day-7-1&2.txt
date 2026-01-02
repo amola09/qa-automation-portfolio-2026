@@ -1,0 +1,20 @@
+Sum                 =SUM(A1:A10)                             Adds numbers together.
+Average             =AVERAGE(A1:A10)                         Finds the mean (average) of numbers.
+Min                 =MIN(A1:A10)                             Finds the smallest value.
+Max                 =MAX(A1:A10)                             Finds the largest value.
+Sumif           =SUMIF(A1:A10,"Math",B1:B10)                 Adds numbers only if a condition is met.
+sumifs      = SUMIFS(sum_range, criteria_range1, criteria1,  Add numbers that meet multiple conditions.
+                    [criteria_range2, criteria2], …)
+Averageif    =AVERAGEIF(A1:A10,"Math",B1:B10)                Finds the average based on ONE condition.
+Averageifs  =AVERAGEIFS(C1:C10,A1:A10,"Math",B1:B10,">=80")  Finds the average based on MULTIPLE conditions.
+
+MATCH   =MATCH(lookup_value, lookup_array, [match_type])     MATCH finds the position of a value in a range.  
+INDEX   =INDEX(array, row_num, [column_num])                  INDEX returns a value from a range based on a row and/or column number.
+
+INDEX+MATCH   =INDEX(C2:C4, MATCH(102, A2:A4, 0))            Better than Vlookup :-
+                                                              ✔ Can look left or right
+                                                              ✔ Faster on large data
+                                                              ✔ Columns can be inserted safely
+                                                              ✔ More flexible
+
+

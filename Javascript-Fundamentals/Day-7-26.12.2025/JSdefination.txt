@@ -1,0 +1,11 @@
+// - js ?--> object oriented, case sensitive
+
+// # What is js?
+
+// -Dynamically typed
+// -Synch
+// -Single thread
+// -Versatile
+// -object oriented- in everything is object. { { { }}}
+// -js case sensitive
+

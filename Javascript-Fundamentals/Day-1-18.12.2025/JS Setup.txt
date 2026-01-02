@@ -1,0 +1,41 @@
+# Step:1 
+Download and install node.js:
+https://nodejs.org/en/download
+
+-Check node version:  node -v // v20.13.1
+
+# Step:2 Download and install visual studio code:
+https://code.visualstudio.com/docs/?dv=win64user
+
+# Step 3: Open visual studio code(VSC):
+ -Create a folder on Desktop
+ -open same folder in VSC
+
+ -Add a file in project: script.js 
+ Add the code: console.log("hello");
+
+ # Terminal execution: 
+ - open VSC terminal
+ - select the script.js path in VSC terminal
+ - Execute command in terminal: node script.js
+ - Can see the result.
+
+ # Install live server extension:
+ - Add a file in project: index.html 
+ - Add HTML5 structure by using short cut:
+   !+ Enter
+
+ - In Body section write:
+  <script> 
+    write js code(script)
+    document.write("Hello World!");
+  </script>  
+
+# To add external js file:
+- Head section write:
+  <script src="js file name"></script>   
+
+
+# Online js code editor:
+1. js bin
+2. browser console

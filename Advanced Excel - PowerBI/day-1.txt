@@ -1,0 +1,23 @@
+//
+Day-1
+// = SUM() -- > inside bracket subjet cell
+// = subject/400 --> to get percentage
+// = AND(D2>35,E2>35,F2>35,G2>35) --> get true if greater than 35 else false in any subject
+// Relative Reference -- if we simply drag 287 to right it multiplies/adds 
+// Absoulute Reference --> we press F4 lock row & column to stay the value Absoulute value doesnt change
+// mixed Refrence
+Reference Type	  Example	        Column	Row
+Relative	        A1	            Changes	Changes
+Absolute	        $A$1	        Fixed	Fixed
+Mixed	            $A1 / A$1	    Fixed / Changes	Changes / Fixed
+
+Description	            Shortcut key
+To select all cell	----> Ctrl+A
+Select current Row  ----> Shift + space
+Select current column----> Ctrl + space
+Add Row / Column	---->  Ctrl + Shift + =
+Delete Row / Column	---->  Ctrl+ -
+AutoFit Column Width----> Alt+H+O+I
+
+
+

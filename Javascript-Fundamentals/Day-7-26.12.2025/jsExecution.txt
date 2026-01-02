@@ -1,0 +1,20 @@
+# JavaScript execution:-
+    # Event loop in js:-
+        - js execute its all code inside the execution context(EC).
+        - EC have 2 main sections/blocks/Phase: Heap,  stack.
+        - we have EC inside the EC.
+   
+    # 2 phases:-
+        1. compilation/Memory creation (Heap):     
+            - Happning in 1 st phase in Heap.
+            - Memory creation for variable and default value assign 
+            - creating address - memory creation/Allocation
+
+        2. Code execution(Stack):
+            - Actually code execute inside this block in queue.
+            - Have Exection Context inside the Execution Context.
+
+# what is hoisting in js ?
+    - Hoisting nothing but the variable declaration.
+    - In variable declaration and assign its default value in first memory creation phase (Heap Block).
+    - For var we have default undefined value and with let, const variables value is unavailable(Value not present) 
