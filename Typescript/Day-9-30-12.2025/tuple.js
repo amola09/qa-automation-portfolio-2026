@@ -17,8 +17,6 @@ console.table(tupleOne);
 tupleOne.push("js");
 console.table(tupleOne);
 console.log(tupleOne.length); // 3
-
-
 tupleOne.pop();
 console.table(tupleOne);
 console.log(tupleOne.length);

@@ -16,6 +16,7 @@ console.log(tupleThree)
 let tupleOne: [number, string] = [1, "ts"];
 console.log(tupleOne.length); // 2
 console.table(tupleOne);
+
 // push()
 // tupleOne.push(true); // TS2345: Argument of type 'boolean' is not assignable to parameter of type 'string | number'.
 tupleOne.push("js");

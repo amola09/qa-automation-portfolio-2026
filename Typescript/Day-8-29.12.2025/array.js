@@ -1,13 +1,13 @@
 // array type:
-var c = 10;
+var arr1 = 10;
 // let a = [10, 20, 30, 40];
 //        0  1   2   3
 // Syntax for array type annotate:
 // let/var/const variableName: type[] = [values];
-var a = [10, 20, 30, 40];
-var b = [50, 60, 70, 80];
-console.log(a);
-console.log(b);
+var arrOne = [10, 20, 30, 40];
+var arrTwo = [50, 60, 70, 80];
+console.log(arrOne);
+console.log(arrTwo);
 // let aa: string[] = [10, 20, 30, 40]; // Type 'number' is not assignable to type 'string'.
 var aa = ["10", "20", "30", "40"];
 console.log(aa);
