@@ -16,7 +16,7 @@
 // let aa: string[] = [10, 20, 30, 40]; // Type 'number' is not assignable to type 'string'.
 let arrThree: string[] = ["10", "20", "30", "40"];
 
-console.log(aa)
+console.log(arrThree)
 
 // Array annotation:
 let arrFour: Array<string> = ["11", "12", "13", "14"];
