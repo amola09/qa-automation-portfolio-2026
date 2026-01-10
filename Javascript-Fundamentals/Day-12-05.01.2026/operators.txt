@@ -1,0 +1,103 @@
+# To know the Any lang:
+1.variable.
+2.data types.
+3.operators
+4.controls statements:
+  1. Conditional statements
+  2. loops
+  3. jump keywords
+-------------------------------------------
+6.Functions
+
+-------------------------------------------
+# JavaScript Operator Types :
+Q. What is operands, operators, operation?
+  - unary, binary, ternary
+* LHS Operator RHS --> Action, Return
+
+1. Unary operators: +, ++, -- (Pre, post)
+2. Binary operators:
+    1. Arithmetic Operators:+,-,*,/,**,%
+    2. Assignment Operators: =, +=, -=, *=, /=, %=, **= (short hand methods)
+    3. Comparison Operators: <, >, <=, >=, ==, ===, !=, !==
+    4. Logical Operators: &&, ||, !
+    5. Bitwise Operators.
+    6. Miscellaneous Operators:, typeof, instanceof, void() --> Explain->;
+3. Ternary operators: 
+    1. conditional operator.
+
+*Examples Unary operators:
+    let a = 55;
+    let b = a++ + --a + ++a + a--;
+             55 + 55 + 56 + 56
+    console.log(b) // 222
+
+    x=20,y=30;
+    x++ + --y + ++y + --x
+    20+29+30+20
+
+NOTE: Focus on the variable values, what current variable value holding the variable(not considering any post operation) will consider for print/further operation
+
+Q. Diff =, ==, === ? Equality operator (with type coercion) & Strict Equality operator (without type coercion)
+Q. using ternary operator find the greatest number amongst 3 number
+
+    console.log("hi" && "1")
+    console.log("hi" || "1")
+    console.log("" || "1")
+
+    console.log(true == 1)
+    console.log(true === 1)
+    console.log("" == 1)
+    console.log("" == 0)
+    console.log("" == false)
+    console.log("" === 0)
+------------------------------------------------------------------------
+
+# Corecion : forcefully datatype conversion for perform operation
+  1. comparision operator: converting into number datatype
+  2. Arithmetic operations:
+      1. string: + (string concatination): simply addition of string
+      2. string: (-*/) Datatype convert into number & with string perform mathematical operations.
+      3. For unary operands + operator will convert datatype into number.
+
+#Examples:
+    str + str = str
+    str + num = str
+    num + str = str
+    -----------------
+    str - str = num
+    str - num = num
+    num - str = num
+    -Same with *,/
+    -----------------
+    + str + num = num
+    ------------------
+
+       '12' + 12;       // '1212'
+        13 + '1';        // '131'
+        12.34 + '34';    // "12.3434"
+
+        '12' - 10;     // 2
+        '90.10' - 10;  // 80.10
+        '12' * 12;     // 144
+        '12' * '12';   // 144
+        '12' / '12';   // 1
+        'we' - 2;   // NaN
+
+         '10' + 10;   // '1010'
+          // But
+          +'10' + 10;  // 20
+          +'10';   // 10
+          +'';    // 0
+
+          let a = 55;
+          let b = a++ + --a + ++a + a--;
+          x=20,y=30;
+          x++ + --y + ++y + --x
+          
+          10 + '0' - 30;             // 70
+          (12 * '12' - 10) / '10';   // 13.4
+          console.log("1"-"-1")
+-----------------------------------------------------
+Q1. Ask user to enter 2 numbers & 1 operator (+ - * /)
+   perform the operation based on the user entered operator.

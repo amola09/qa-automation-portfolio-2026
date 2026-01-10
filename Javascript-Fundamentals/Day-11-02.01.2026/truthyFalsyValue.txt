@@ -1,0 +1,17 @@
+# Truthy values in js:
+        - true
+        - 1 (Any non zero number)
+        - 'JS' (Non empty string)
+        - [1,2] (Non empty array)
+        -  (Non empty object)
+        - Any function
+
+# Falsy values in js :
+        - false
+        - Null
+        - Undefined
+        - NaN
+        - 0
+        - '' (empty string)
+        - [] (empty array)
+        - {} (empty object)
