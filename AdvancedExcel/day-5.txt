@@ -1,0 +1,27 @@
+
+VLOOKUP -->
+Lookup value must be present in first column in table array
+Works Left to right
+Column index should be positive
+Vlookup not work here ==> Lookup value not present in first colum	
+If Duplicate Lookup value present in table array it gives first occurrence only
+VLOOKUP is not case-sensitive
+VLOOKUP	Linking data from multiple files and tables	
+		
+
+Syntax:	VLOOKUP(lookup_value, table_array, col_index_num, [range_lookup])	
+		
+	VLOOKUP(lookup_value, table_array, col_index_num, [range_lookup])	
+	lookup_value : Whom / For which value we finding value	Find value for
+	table_array: Where / Data source	
+	col_index_num: Column number	Column number
+	[range_lookup]: Exact match or not?	True/FAlse
+		
+		
+Notes :	
+    Lookup value must be present in first column in table array	
+	If Duplicate Lookup value present in table array it gives first occurrence only	
+	Works Left to right	
+	Column index should be positive	
+	Make sure table array reference should be fixed	
+

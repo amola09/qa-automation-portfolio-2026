@@ -1,0 +1,14 @@
+Filter: Allows users to display only selected data from a worksheet while hiding the rest of the data temporarily.
+It helps in viewing and analyzing specific information without deleting any data.
+
+
+Steps to Apply Filter:
+1. Select data
+2. Click on "Home" Tab ==> Click on "Sort & Filter" ==> Select "Filter"
+
+1. Select data
+2. Click on "Data" Tab ==> Select "Filter"
+
+1. Select data
+2. CTRL+SHIFT+L
+
