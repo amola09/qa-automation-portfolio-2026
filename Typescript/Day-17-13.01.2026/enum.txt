@@ -1,0 +1,18 @@
+/* 1. When to use enums vs objects
+
+✔ Use enum when:
+
+you want strict typing
+
+fixed set of values
+
+compiler safety
+
+
+✔ Use const object when:
+
+you want flexibility
+
+no reverse mapping
+
+smaller JS output  */
