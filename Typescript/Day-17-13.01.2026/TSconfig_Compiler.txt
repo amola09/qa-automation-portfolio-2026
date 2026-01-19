@@ -16,3 +16,14 @@ TypeScript compiler configuration :
     ES5 --> var
     ES6 --> let, const
     ====================
+
+    -- .d.ts , map.js files generates due to internal and external path should be given,
+    -- tsc commands has to set a folder path to run with only tsc commands so inside the folder files run
+
+    this command running on the powershell deletes every generated file by ts config 
+    --> Get-ChildItem -Recurse -Include *.js,*.map,*.d.ts | Remove-Item
+
+    --- tsc --showConfig - shows all configured files with their status
+    -- git status     --> shows last action Matched
+    -- git restore. restores all files
+    -- git checkout -- . hard restores all files

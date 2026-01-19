@@ -1,8 +1,6 @@
 // readonly modifier:
 
 let a1: readonly [string, boolean] = ["TS", true];
-// push()
-// pop()
 console.log(a1, a1.length);
 // a.push("TS"); // error TS2339: Property 'push' does not exist on type 'readonly [string, boolean]'.
 // a.pop(); // error TS2339: Property 'pop' does not exist on type 'readonly [string, boolean]'.

@@ -20,8 +20,8 @@
 //   // key2: "val3"
 // };
 
-let obj: { key1: string; key2: boolean } = {
+let obj3: { key1: string; key2: boolean } = {
   key1: "val2",
   key2: true,
 };
-console.log(obj)
+console.log(obj3)
