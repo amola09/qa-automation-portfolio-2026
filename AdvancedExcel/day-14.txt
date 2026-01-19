@@ -1,0 +1,24 @@
+Function	            Description
+MIN	                    Smallest value
+SMALL	                n-th smallest value
+LARGE	                n-th largest value
+MAX	                    Largest value
+INT	                    Rounds down to nearest integer
+ABS	                    Absolute value
+CEILING	                Rounds up to nearest multiple
+FLOOR	                Rounds down to nearest multiple
+ROUND	                Rounds to a number of digits
+ROUNDDOWN	            Rounds down
+ROUNDUP	                Rounds up
+MEDIAN	                Middle value
+MOD	                    Remainder after division
+MODE	                Most frequent value
+POWER               	Raises a number to a power
+PRODUCT	                Multiplies values
+QUOTIENT	            Returns the integer portion of a division
+SQRT	                Square root
+STDEV	                standard deviation
+SUBTOTAL	            Returns a subtotal in a list
+SUMPRODUCT	            Multiplies arrays and sums the products
+VAR	                    Sample variance
+Randombetween	        Generate random value

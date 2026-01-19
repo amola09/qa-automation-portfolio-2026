@@ -1,0 +1,10 @@
+Step 1: Create the dropdown
+
+1.Select the cell where you want the dropdown (say A1)
+
+2.Go to Data → Data Validation
+
+3.Under Allow, choose List
+
+In Source, enter values separated by commas
+Example:Male,Female

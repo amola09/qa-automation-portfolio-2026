@@ -1,0 +1,3 @@
+Copy Unique values another location	Select data (Column) ==> Home==> Conditional formatting ==> Highlight Cells Rules ==> Duplicate Values ==> OK
+Remove duplicate records	Data ==> Remove duplicate Records
+Copy Unique values another location	Data ==> Advanced ==> Copy to another location ==> Unique records Only ==> OK
