@@ -106,5 +106,5 @@ console.log(9999999999999999);
 let bigNum = 9999999999999999n;
 console.log(bigNum, typeof bigNum); // 9999999999999999n bigint
 
-let objNew = Object.create({keyName:10})
+let objNew = new Object.create({keyName:10})
 console.log(objNew)
