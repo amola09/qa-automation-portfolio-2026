@@ -29,7 +29,7 @@ if (5 != 3) {
 }
 
 // if else
-    
+
 let marks = 45;
 
 if (marks >= 50) {
@@ -49,3 +49,4 @@ if (score >= 90) {
 } else {
   console.log("Grade C");
 }
+
