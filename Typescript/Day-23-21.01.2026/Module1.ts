@@ -15,6 +15,7 @@
 let a = 10;
 export default a;
 
+
 // can export multipal items from single file using export keyword
 let aa = 10;
 let b = true;
@@ -22,4 +23,4 @@ let c = "Hello";
 
 export { aa, b, c };
 
-// // {{}}
+// {{}}

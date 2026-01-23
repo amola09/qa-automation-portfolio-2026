@@ -8,12 +8,22 @@ interface interfaceOne {
   key2: string;
 }
 
-let object1: Required<interfaceOne> = {
+let objectOne: Required<interfaceOne> = {
   key1: 10,
-  //   key2: "TS",
+   key2: "TS",
 };
 
-console.log(object1);
+console.log(objectOne);
 
 // Think ?
 // Default
+
+interface interfaceTwo{
+  key1:number
+  key2:null
+}
+let obj2: Required<interfaceTwo>={
+  key1:10,
+  key2:null
+}
+console.log(obj2)

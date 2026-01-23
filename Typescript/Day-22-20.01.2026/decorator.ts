@@ -23,7 +23,7 @@ Because you can:
 
 function classDecorator(para1: Function) {
   console.log(para1);
-  console.log(para1.name);
+//   console.log(para1.name);
 }
 
 /* 
@@ -99,18 +99,18 @@ class classThree {
 
 // 4. parameter Decorator:
 
-function parameterDecorator(para1: any, para2: string) {
-  console.log(para1);
-  console.log(para2);
-}
+// function parameterDecorator(para1: any, para2: string) {
+//   console.log(para1);
+//   console.log(para2);
+// }
 
-class classFour {
-  key1: number;
-  constructor(@parameterDecorator para: number) {
-    this.key1 = para;
-  }
+// class classFour {
+//   key1: number;
+//   constructor(@parameterDecorator para: number) {
+//     this.key1 = para;
+//   }
 
-  methodOne(para: boolean) {
-    console.log("Hi I am method");
-  }
-}
+//   methodOne( para: boolean) {
+//     console.log("Hi I am method");
+//   }
+// }

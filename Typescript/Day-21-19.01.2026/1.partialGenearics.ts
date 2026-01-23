@@ -14,3 +14,12 @@ let obj: Partial<interfaceOne> = {
 };
 
 console.log(obj);
+
+interface interfaceTwo{
+  key1:string
+  //key2:boolean
+}
+let obj1:Partial<interfaceTwo>={
+ key1:"JS"
+}
+console.log(obj1)
