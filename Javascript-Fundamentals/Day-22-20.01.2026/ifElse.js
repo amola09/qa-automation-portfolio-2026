@@ -40,13 +40,13 @@ if (marks >= 50) {
 
 
 // nested if else
-let score = 82;
+let score = 92;
 
 if (score >= 90) {
-  console.log("Grade A");
+  console.log("Grade A")
 } else if (score >= 70) {
-  console.log("Grade B");
+  console.log("Grade B")
 } else {
-  console.log("Grade C");
+  console.log("Grade C")
 }
 

@@ -1,0 +1,98 @@
+# controls statements:
+  1. Conditional statements: if, if-else, if-else if, nested if-else, switch case
+  2. loops: while, do-while, for, for-in, for-of
+  3. jump keywords: break, continue, return
+
+-------------------------------------------------------------------------------
+1. Conditional statements: if, if-else, if-else if, nested if-else, switch case
+    ---------------------
+    if: only if statement
+        condition--> true/false
+        -code will be executed only if condition is true.
+            if(condition)
+            {
+                //if(true) block code
+            }
+        
+    ---------------------------------------------
+    if-else: Alternative incase if condition fails
+      - if condition is true the if block will execute or else else block will execute
+            if(condition)
+            {
+            //if(true) block code
+            }
+            else
+            {
+            //else(false) block code
+            }
+        
+    -------------
+    if else-if:
+        -we can check multiple conditions by if else-if ladder.
+        -if conditon is true code1 will be executed else it will check condition2 and code 2 will be executed if it is true else code3 will be executed automatically.    
+       
+    --------------------------------------------------------------------
+    nested-if: you can keep one if statement inside another if statement. 
+        
+            if(condition1)
+            {
+                code1
+                if(condition2)
+                {
+                    code2
+                }
+            }
+------------------------------------------------------------------------
+
+3. jump keywords: 
+    1. break --> From that point loop/code execution will stop/break the execution
+    2. continue --> From that particular point loop/code execution will skip and execute next loop iteration
+    3. return --> From that point loop/code execution will stop
+    e.g. return TrueCondition;
+----------------------------------------------------
+
+# switch case/statement:
+
+    -switch works in the place nested if (without break) & with break multiple if-else.
+    -switch contains cases and default. if switch expression matches any case and that case will be executed , if it doesn't match , then default will be executed.
+    -Every switch statemnet will have break else code of next case will also be execute until program finds break or switch is over
+    -This error is called "Fall-through" error
+    ----------------------------------------------
+        let x=1;
+        switch(x)
+        {
+            case 0:console.log("something1");break;
+            case 1:console.log("something2");break;
+            case 2:console.log("something3");break;
+            default:console.log("default");break;
+        }
+    ------------------------------------------------
+            let day = 3; // Pass values from web
+            let dayName;
+            switch (day) {
+            case 1:
+                dayName = 'Monday';
+                break;
+            case 2:
+                dayName = 'Tuesday';
+                break;
+            case 3:
+                dayName = 'Wednesday';
+                break;
+            case 4:
+                dayName = 'Thursday';
+                break;
+            case 5:
+                dayName = 'Friday';
+                break;
+            case 6:
+                dayName = 'Saturday';
+                break;
+            case 7:
+                dayName = 'Sunday';
+                break;
+            default:
+                dayName = 'Invalid day';
+            }
+            console.log(`Today is ${dayName}`);
+    ------------------------------------------------

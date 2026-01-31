@@ -1,0 +1,29 @@
+3. Math : Its in global object and its object.
+
+NOTE: Math methods only accepting(argument) number datatype and returning only number datatype.
+   # Math Methods:     
+        1. Math.pow(x,y)
+           Action: calculating the result of x power y
+           Return: number  
+        2. Math.abs(-x) 
+           Action: will remove the negitivity and print results
+           Return: number 
+        3. Math.random()
+           Action: will generate random value from 0.0-1.0
+           Return: number
+        4. Math.round(num) -->(0.5>= round for max value and 0.5< round for min value)
+           Action: will round figure the value of num
+           Return: number  
+        5. Math.ceil(x)
+           Action: calculating the largest near possible number in decimal number line.
+           Return: number
+        6. Math.floor(x) 
+           Action: calculating the smallest near possible number in decimal number line
+           Return: number 
+        7. Math.max(x,y) & Math.min(x,y) 
+           Action: will generate maximum and minimum values from given values
+           Return: number
+     
+Q. Generate 4 digit OTP.
+
+

@@ -1,0 +1,66 @@
+1. Write a program to display the square of first 10 natural numbers
+   Expected Output : 1 4 9 16 25 36 49 64 81 100
+   
+2. Write a program to find the sum of first 10 natural numbers.
+   Expected Output : 55
+ 
+3. Ask user to enter a number. find the sum of digits of that number.
+   input : 125
+   output : 8 
+   
+4. Ask user to enter a number, print the factorial of that number.
+	input: 5 
+	output: 120
+
+5. Ask user to enter a number & check if that number is prime or not.
+   8 : not prime  
+   5 : prime
+	
+6. Write a program to display the first n terms of Fibonacci series.
+   Input number of terms to display : 10
+	Expected Output :
+	Here is the Fibonacci series upto to 10 terms :
+	0 1 1 2 3 5 8 13 21 34
+
+7. String Compression:
+   String input = "aabbcdaav";
+   Output: a2b2c1d1a2v1
+
+8. Character Occurrences in String:
+   Code to find occurrences of each character in a given string
+      Input: Pratima
+      Output: P: 1, r: 1, a: 2, t: 1, i: 1, m: 1
+
+1. Program to find longest word in a given sentence ?
+2. How to check whether a string is palindrome or not ?
+4. Program to find Reverse of a string without using built-in method ?
+6. Find the factorial of given number ?
+11. Write a JavaScript program to find the maximum number in an array.
+13. Write a JavaScript function to check if a given number is prime.
+15. Write a JavaScript function that returns the Fibonacci sequence up to a given number of terms.
+16. Given a string, write a javascript function to count the occurrences of each character in the string.
+17. Write a javascript function that sorts an array of numbers in ascending order.
+18. Write a javascript function that sorts an array of numbers in descending order.
+19. Write a javascript function that reverses the order of words in a sentence without using the built-in reverse() method.
+20. Implement a javascript function that flattens a nested array into a single-dimensional array.
+
+1️⃣ Write a function that reverses a given string.
+2️⃣ Write a function that finds the longest word in a sentence.
+
+count vowels(a,e,i,o,u) in above string
+reverse string
+reverse words from sentence
+find the length of the number
+find the length of the string
+Make string in capital case
+count the characters from given string
+find max, min value from array
+find prime number from given range
+find even, odd numbers from array
+find even, odd places numbers from array
+remove duplicate elements from the arrey
+concate subarray in array (remove sub array and made one)
+   let arr = [ [20,30],[40,50,60],[70,80,90]]
+   let array = [ ]
+Seperate Alphabets,Numbers and Symbols(Special Chara) from given string
+   // let str = 'AAAAAC2345@#$&6CCCDD%Z'

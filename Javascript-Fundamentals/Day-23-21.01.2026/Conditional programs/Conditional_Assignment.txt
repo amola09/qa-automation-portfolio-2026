@@ -1,0 +1,23 @@
+1. Ask user to enter a number and check if that number is even or odd.
+2. Ask user to enter 3 numbers, find the largest amongst 3. (ternary & if-else)
+3. Ask user to enter 3 marks (Sci,Eng,Maths). Find Avg mark.
+      if avg > 60  first class
+      if avg > 50  second class
+      if avg > 30  Pass
+      if avg < 30	 Fail   
+4. Ask user to enter the electricity units consumed. Find the total bill amount.
+      1-100   	2rs/unit
+      100-200  3rs/unit    
+      >200     5rs/unit   
+5. You are shopping from flipkart, below are the discount rates applicable.
+   Ask user to enter gross-amt and calculate net-amt.
+      1-2000  0% discount
+      >2000   5% discount
+      >5000   10% discount
+   
+6. Ask user to enter a day-number(1/2/3) and display day name (monday/tuesday) using switch. or     Month
+
+Q7. Ask user person1 age & Person2 age, according to it show msg young/old/equals too
+
+
+   
