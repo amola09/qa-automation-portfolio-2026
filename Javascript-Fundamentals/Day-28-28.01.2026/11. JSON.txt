@@ -1,0 +1,31 @@
+# JSON (Javascript Object Notation) : 
+    1. JSON is a data representation format similar to XML and YAML.
+    2.JSON is used for transferring data between servers and web applications. The common use cases are in APIs and config.
+    3.JSON is lightweight and easy to write, compared to XML, and integrates easily with most languages.
+    4.JSON files have the .JSON extension. Inside the file, the data is represented in key-value pairs in an object.
+    5. Inside the JSON file, keys and string values should be enclosed in double quotes. Each key-value pair should be separated by a comma from the other pair.
+    6. Thus, JSON is much easier to parse and is faster than XML. It is shorter, doesn’t use end tags, is quicker to read and write and can use arrays, unlike XML.
+    7.JSON compatible with multipal languages (for backend)
+----------------------------------------------------------------
+
+# DataTypes in JSON :
+  * Key => 1. Strings
+  * Value => 1. Strings
+             2. numbers
+             3. Boolean
+             4. null
+             5. arrays
+             6. objects
+---------------------------------------------------------------
+
+# JSON Methods:	
+    1. JSON.stringify() --> converts object to string.
+    2. JSON.parse()  -->    converts string to object.
+
+    - While receiving JSON from a web server, the JSON string needs to be converted to a Javascript object. This can be achieved by using: JSON.parse().
+    - To convert a Javascript object to a JSON string, we can use the JSON.stringify() method and send it to the web server.
+-----------------------------------------------------------------
+
+
+
+
