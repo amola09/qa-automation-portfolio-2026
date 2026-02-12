@@ -1,0 +1,129 @@
+# Additionally:
+    delete arr[1] --> leaves undefined holes in the array
+    typeof(arr)
+    arr instanceof Array
+
+# Array static methods:
+	Array.isArray(arr) : checks arr for being an array.(R-Boolean)
+	Array.from() : change array-like or iterable into true array
+	Array.of() : create array from every arguments passed into it.
+
+    arr.keys()
+    arr.values()
+    arr.entries()
+
+# Array properties:
+    length
+
+# Array methods:     
+    * To add/remove elements:
+        push(...items) – adds items to the end (R-New array length)
+        pop() – extracts an item from the end (R-popuped value)
+        shift() – extracts an item from the beginning (R-shifted out value)
+        unshift(...items) – adds items to the beginning (R-New array length)
+        splice(pos, deleteCount, ...items) – at index pos delete deleteCount elements and insert items.
+        slice(start, end) – creates a new array, copies elements from position start till end (not inclusive) into it.
+        concat(...items) – returns a new array: copies all members of the current one and adds items to it. If any of items is an array, then its elements are taken. 
+        copyWithin(copyPointIndex, copyStartIndex, copyEndIndex);
+        flat()   - creates a new array with the elements of the subarrays concatenated into it.flat(Infinity) , flat() also removes holes in array
+        reverse	() – reverses the array in-place, then returns it.
+
+    * search value:
+        at(index)
+        indexOf(value, index(startPoint))
+        lastIndexOf(value, index(startPoint))
+        includes(value, index(startPoint))
+
+    * Datatype conversion:
+        split()/join() – convert a string to array and back.
+
+    * To transform the array:
+        map(func) – creates a new array from original array by calling func for every element.
+        flatMap(func) - maps each element in an array using a mapping function and then flattens the results into a new array
+        sort(func) – sorts the array in-place, then returns it.    
+        reduce(func, initial) – calculate a single value over the array by calling func for 	each element and passing an intermediate result between the calls.
+        filter(func) – filter elements through the function, return all values that make it return true.    
+        find(func) – filter element through the function, return first value that make it return true.
+        findLast(func) – filter element through the function, return last value that make it return true.
+        findIndex(func)  - it is like find(), but returns the index instead of a value.
+        every(func),
+        fill(func),
+        some(func)
+
+    * To iterate over elements:        
+        forEach(func) – calls func for every element, does not return anything.     
+
+==============================================================================================
+/* 
+# Array methods:     
+    * To add/remove elements:
+        push(...items) 
+        pop() 
+        shift() 
+        unshift(...items) 
+        splice(pos, deleteCount, ...items)       
+        slice(startIndex, endIndex(Excluding))
+        concat(...items)         
+        flat() 
+        reverse() 
+        copyWithin(copyPointIndex, copyStartIndex, copyEndIndex);
+
+    * search value:
+        at(index) 
+        indexOf(value, index(startPoint))
+        lastIndexOf(value, index(startPoint))
+        includes(value, index(startPoint))
+
+    * Functional methods:
+        map(func) – 
+            Action : Iterate/operation on the each element (as per the function defination)
+            Return : New array
+
+        flatMap(func) - flat()+map()
+            Action : Iterate/operation on the each element (as per the function defination)
+            Return : New array
+
+        sort(func) –   
+            Action : array values arranging in alphabetical order
+            Return : updated array       
+        
+        reduce(func(acc,el,...), initial) –
+            Action : calculate a single value over the array by calling func for 	each element and passing an intermediate result between the calls.
+            Return : single value (depends on function defination)
+
+        filter(func) –     
+            Action : filter elements through the function
+            Return : New filtered array 
+
+        find(func) – 
+            Action : filter element through the function, return first value that make it return true.
+            Return : array el
+
+        findLast(func) – 
+            Action : filter element through the function, return last value that make it return true.
+            Return : array el
+
+        findIndex(func)  - 
+            Action : it is like find(), but returns the index instead of a value, where the condition match
+            Return : number
+
+        fill(func):
+            Action : fill the required element in array
+            Return : new array
+         
+        some(func):
+            Action : checking condition for some el
+            Return : Boolean
+            
+        every(func):
+            Action : checking condition for every el
+            Return : Boolean
+
+    * To iterate over elements:        
+        forEach(func):
+            Action : Iterate/operation on the each element
+            Return : undefined
+
+    * Datatype conversion:
+            split/join – convert a string to array and back.
+*/

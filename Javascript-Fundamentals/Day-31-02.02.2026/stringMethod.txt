@@ -1,0 +1,41 @@
+
+/* 
+# string properties & methods:
+        length
+
+        toUpperCase()
+        toLowerCase()
+        trim()
+        trimStart()
+        trimEnd()
+        startsWith(subString)
+        endsWith(subString)
+        concat(joiner, joining element)
+        padStart(string length, padElement)
+        padEnd(string length, padElement)        
+        repeat(count)
+        replace(targetString, replacerString)
+        replaceAll(targetString, replacerString)
+
+* search string:
+        search(string/RegExp)
+        indexOf(string, index(startPoint))
+        lastIndexOf(string, index(startPoint))
+        includes(subString, index(startPoint))
+
+* Retrive string character: 
+        at(index)
+        charAt(index)
+        charCodeAt(index)
+
+* Retrive sub-string:
+        slice(start, end(not included))
+        substring(start, end)
+        substr(start, length)
+
+* Datatype conversion:
+        toString()
+        split(splitPoint)
+*/
+
+
