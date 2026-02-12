@@ -12,6 +12,3 @@ console.log(aa)
 
 // importing default exported code from Modules1.ts
 // export default:   import  from "path";
-
-// import a from "./Module1";
-// console.log(a); // 10
