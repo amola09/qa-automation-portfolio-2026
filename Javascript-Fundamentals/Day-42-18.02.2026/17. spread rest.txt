@@ -1,0 +1,44 @@
+/* 
+# spread-rest operator: ES6 feature
+    ...
+    ...objectName/variableName --> spread/rest 
+
+    spread --> separate the values
+    input: string, array, object
+    output: depends on the separate value
+
+    rest --> combine the values
+    input: any random entities
+    output: array/object
+
+    // use with:
+        1. function
+        2. destructuring
+*/
+
+
+# spread-rest with Array, String, Object: ES6 feature
+    *spread operator: functionCall(...spread)
+
+    *rest operator/parameter:
+        -Partial rest
+
+    *spread+rest:
+        let a = [1, 2, 3, 4, 5]
+        a = {a: 10 }
+        a = 'krishna'
+        function add(...arr) {
+            console.log(arr, typeof (arr))
+        }
+        console.log(add(...a))
+
+    *spread-rest with destructuring: LHS(rest) = RHS(spread)  
+    - use : [...rest], {...rest} = [...spread], {...spread} ---> Here [], {} are destructuring 
+        LHS(rest):
+         - partial rest
+
+        RHS(spread):        
+         - combine datatype(2 array(concatenating), 2 objects, add in existing)
+         - spread creating shallow copy
+
+# spread-rest with Array, String, Object Destructuring

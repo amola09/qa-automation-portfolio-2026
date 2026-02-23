@@ -1,0 +1,134 @@
+/* 
+# Destructuring:
+    ES6 feature
+    Can destructure object --> array[], string'', object{}
+    De-structure or braking object in seperate address-value pair
+
+    For array: address(index no)-value pair
+
+    array destructure syntax :
+        let [first,second,third] = arrayname/array 
+                 mutipal address = multipal values
+
+- Can skip the array values
+- Assign default values
+- Swaip or exchange the variable values
+- Can destructure 2D array
+*/
+
+
+
+# Destructuring:
+    ES6 feature
+    Can destructure object --> array, string, object
+    De-structure or braking object in seperate address-value pair
+
+    For array and string --> address(index no)-value pair
+    For array:   
+        let [first,second,third]=arrayname/array 
+
+    For string:  
+        let/var/const [variable1, variable2] = "String"
+/* 
+# string destructure :
+  String stored its characters on the index number.
+  As like array, In the string destructuring position is mandateory insted of variable name.
+  
+  String destructuring syntax:
+    let/var/const [variable1, variable2] = "String"
+*/
+
+
+
+
+    For object --> address(keyName)-value pair
+    for object:  
+        let{proprtyone:aliasname,propertytwo:aliasname,propertythree}=objectname/object 
+        let{proprtyone:{proprtyone:aliasname}}=objectname/object --> For nested object structure
+/* 
+# object destructuring:
+
+Syntax :
+    let {property1:aliasname,property2:aliasname,property3} = objectname/object 
+    let {property1:{property1:aliasname}} = objectName/object --> For nested object structure
+
+- Assign default values
+- can destructure complex object structure
+*/
+
+
+- Assign default values during destructuring
+- Skipp array values
+- swaip values
+  
+let Person = {
+          fname: "abc",
+          age: 60,
+          family: {
+                    son1: {
+                              sName1: "Son1",
+                              skillSon1: ["writing1", "Reading1"]
+                    },
+                    son2: {
+                              sName2: "Son2",
+                              skillSon2: ["writing2", "Reading2"]
+                    },
+          },
+          skill: [{ skill1: "Gamming" }, { Skill2: "Playing" }]
+}
+
+# API Response : 
+// let body = {
+//     "page": 1,
+//     "per_page": 6,
+//     "total": 12,
+//     "total_pages": 2,
+//     "data": [
+//         {
+//             "id": 1,
+//             "email": "george.bluth@reqres.in",
+//             "first_name": "George",
+//             "last_name": "Bluth",
+//             "avatar": "https://reqres.in/img/faces/1-image.jpg"
+//         },
+//         {
+//             "id": 2,
+//             "email": "janet.weaver@reqres.in",
+//             "first_name": "Janet",
+//             "last_name": "Weaver",
+//             "avatar": "https://reqres.in/img/faces/2-image.jpg"
+//         },
+//         {
+//             "id": 3,
+//             "email": "emma.wong@reqres.in",
+//             "first_name": "Emma",
+//             "last_name": "Wong",
+//             "avatar": "https://reqres.in/img/faces/3-image.jpg"
+//         },
+//         {
+//             "id": 4,
+//             "email": "eve.holt@reqres.in",
+//             "first_name": "Eve",
+//             "last_name": "Holt",
+//             "avatar": "https://reqres.in/img/faces/4-image.jpg"
+//         },
+//         {
+//             "id": 5,
+//             "email": "charles.morris@reqres.in",
+//             "first_name": "Charles",
+//             "last_name": "Morris",
+//             "avatar": "https://reqres.in/img/faces/5-image.jpg"
+//         },
+//         {
+//             "id": 6,
+//             "email": "tracey.ramos@reqres.in",
+//             "first_name": "Tracey",
+//             "last_name": "Ramos",
+//             "avatar": "https://reqres.in/img/faces/6-image.jpg"
+//         }
+//     ],
+//     "support": {
+//         "url": "https://reqres.in/#support-heading",
+//         "text": "To keep ReqRes free, contributions towards server costs are appreciated!"
+//     }
+// }

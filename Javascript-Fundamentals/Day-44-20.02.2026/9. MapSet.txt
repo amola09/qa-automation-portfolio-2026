@@ -1,0 +1,58 @@
+# limitations of normal js object :
+    -key is only in string datatype. Not able store key in other than string datatype
+    -Normal object not iterable
+
+# To overcome normal object limitations Map, Set objects are introduced in ES6.
+
+# Map, Set ==>
+        -ES6 features.
+        -Map and Set are object. --> Type of object.
+        -Both are iteratable.
+
+# Map: object which stores properties in key-value pair.
+       key have any type of datatype.
+
+
+
+# Properties of Map():
+1. size
+    Action : Calculating count of key-value pair
+    Return : Number
+
+    console.log(objMap2.size) // 0
+
+
+# Methods of Map(): set(), get(), has(), delete(), keys(), values(), entries()  
+
+ 1. set(key, value)
+    Action : setting properties
+    Return : updated Map object
+
+  use address/referance for setting, getting properties, insted of value.
+
+
+
+
+
+================================================
+# Set:   A `Set` object lets you store unique values of any type, whether primitive values or object references.
+
+
+# Properties of Set():
+1. size
+    Action : Calculating count of value/elements
+    Return : Number
+
+
+# Methods of Set(): add(), has(), delete(), clear(), keys(), values(), entries()
+
+ 1. add(value)
+    Action : adding unique value
+    Return : updated set object
+
+
+
+===================================================
+
+Map () --> object who can set keys in any datatype
+Set () --> object who stores unique data/values

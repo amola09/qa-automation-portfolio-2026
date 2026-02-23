@@ -1,0 +1,148 @@
+# Pass by value, Pass by referance:
+
+- Pass by Value:
+    When passing a primitive data type (like numbers, strings, booleans) to a function, JavaScript passes a copy of the value to the function.
+    Changes made to the parameter inside the function do not affect the original value outside the function.
+
+        function increment(num) {
+          num++; // Increment the value of num
+          return num;
+      }
+      let x = 5;
+      console.log(increment(x)); // Output: 6
+      console.log(x); // Output: 5 (original value remains unchanged)
+
+- Pass by Reference:
+    When passing non-primitive data types (like objects and arrays) to a function, JavaScript passes a reference to the original object or array, not a copy.
+    Changes made to the parameter inside the function affect the original object or array outside the function.
+
+      function addElement(arr) {
+          arr.push(4); // Add an element to the array
+          return arr;
+      }
+      let myArray = [1, 2, 3];
+      console.log(addElement(myArray)); // Output: [1, 2, 3, 4]
+      console.log(myArray); // Output: [1, 2, 3, 4] (original array is modified)
+
+------------------------------------------------------------------------------------
+
+    let arr1 = [10, 20];
+    // address/reference copy ( Not value copy)
+    let arr2 = arr1;  // address/reference copy ( Not value copy)
+    // a new array is not being created, rather same address is being assigned to arr2
+    // both arr1 & arr2 are holding the same address
+    arr2.push(30);
+    arr1.push(40);
+    console.log(arr1);
+    console.log(arr2);
+
+    // Value copy
+    let arr3 = [10, 20];
+    // let arr4 = arr3.slice(); // Value copy
+    let arr4 = [...arr3] // Value copy
+    arr3.push(30)
+    arr4.push(40)
+    console.log(arr3)
+    console.log(arr4)
+    
+Q. Value comparison & address(referance) comparison ?
+    NOTE: 
+    Value Comparison: Compares the content of values regardless of type (with == after type      coercion or === without coercion).
+    Address Comparison (Reference): Compares if two references point to the same object in memory (using ===).    
+============================================================
+# shallow, Deep copy:
+
+  1.Primitive datatypes in Javascript like String, Number, Boolean, Undefined etc are passed by value, whereas structured datatypes like Objects and Arrays are passed by reference.
+  2.Primitive data types are immutable, whereas structured data types are mutable.
+  3.A shallow copy creates a new object, but the object still points to the original object in memory.
+  4.Assigning objects using the  = operator creates a shallow copy, which means that when either object is modified, the other object also reflects the change.
+  5.To create a shallow copy, we can use the following methods: Spread syntax(…), Object.assign(), Array.from(),Object.create(),Array.prototype.concat().
+  6.A deep copy on the other hand, creates a new object which points to a new address in memory. This means that when either object is modified, the other object does not change.
+  7.For objects that contain only primitive values, a shallow copy is used and for nested objects a deep copy is required.
+  8.Deep copy can be done by using: JSON.parse(JSON.stringify()), structuredClone() or using third party libraries like Lodash.
+  9.Shallow copies are generally faster and more memory-efficient. However, making a shallow copy of an object won't clone child objects. Therefore, the copy is not fully independent of the original.
+  10.Deep copy allows data independence and modifiability, however it is much slower and more expensive than a shallow copy.
+
+
+        let arr1 = [10, 20, [30, 31]];
+          let arr2 = [...arr1]; // value copy - shallow copy
+          arr2.push(40);      // trying to push 40 into the outer array
+          arr2[2].push(32);   // trying to push 32 into the inner array
+          console.log(arr1);  // [10, 20, [30, 31,32]]
+          console.log(arr2)   // [10, 20, [30, 31, 32],40]
+          // shallow copy - only top level elements in the array are copied by value,
+          // inner arrays are copied by address
+
+          let arr3 = [10, 20, [30, 31]];
+          let arr4 = structuredClone(arr3); // value copy - Deep Copy
+          arr4.push(40);      // trying to push 40 into the outer array
+          arr4[2].push(32);   // trying to push 32 into the inner array
+          console.log(arr3);  // [10, 20, [30, 31]]
+          console.log(arr4)   // [10, 20, [30, 31, 32],40]
+          // Deep Copy - not only the top level elements but also the inner arrays are copied by value
+------------------------------------------------------------------------------
+
+            let obj1 = { a: 10, b: 20 };
+            let obj2 = obj1;  // Address Copy, a new object is not being created
+            obj2.c = 30;
+            console.log(obj1);
+            console.log(obj2); // This is neither shallow copy nor deep copy, reference copy
+
+            let obj3 = { a: 100, b: 200, c: { d: 300 } };
+            // let obj4 = Object.assign({}, obj3); // value copy - ES-5
+            let obj4 = { ...obj3 };   // value copy - shallow copy - ES-6
+            obj4.a = 150;
+            obj4.c.d = 350; // nested property, copied by address
+            console.log(obj3) // { a: 100, b: 200, c: { d: 350 } }
+            console.log(obj4) // { a: 150, b: 200, c: { d: 350 } }
+
+            let myObj1 = { a: 100, b: 200, c: { d: 300 } }
+            let myObj2 = structuredClone(myObj1); // value copy - Deep Copy
+            myObj2.a = 150;
+            myObj2.c.d = 350;   // everything is copied by value(even nested properties)
+            console.log(myObj1)
+            console.log(myObj2)
+
+======================================================
+
+
+# Working with Primitive and Non-Primitive datatypes:
+    1. comparsion
+    2. Pass by
+    3. Copy
+---------------------------------
+// Primitive datatype: Direct value stored on the address
+    let a = 10;
+// Non-Primitive datatype: Nested address-values pairs stored on the address
+    let arr = [1, 2, 3]
+    let arry = [1, 2, 3]
+
+--------------------------------
+1. comparsion:  
+  # value comparison: comparsion operator can directly compare values
+    1 == 1  // true
+    arr == arr // true
+
+  # address comparison: comparsion operator can not compare nested stored values
+    [1,2] == [1,2] // false
+    arr == arry // false
+    arr == arr // true
+-----------------------------------
+
+2. Pass by: At time of function calling
+
+        function update(para) {
+            // If para primitive its creating new memory in block
+            // If para Non-primitive its creating new address (para) in block and pointing to the arr value
+            // update operations
+        }
+        update(a) // Primitive --> Value copy --> Passing value (Pass by value)
+        update(arr) // Non-Primitive --> address copy --> Passing address (Pass by address)
+------------------------------------
+
+3. Copy:
+     A. value : Memory Allocation (1 seperate address for 1 seperate value)
+        # Types of value copy:
+          1. Shallow copy : combination of value and address copy for nested object structure
+          2. Deep copy : Totally seperate value copy with all nested object structure
+     B. address/refrance/variableName : 1 value(memory creation) for multipal addresses
