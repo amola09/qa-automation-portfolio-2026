@@ -1,0 +1,34 @@
+/*
+Q. what is 'this'?
+   - js reserved keyword or variable
+   - 'this' always containing dynamic value which is object
+   - 'this' is a object (Dynamic object)
+   - which object ?
+    - containing dynamic value/object according to its scope:
+      1. In script & functions : this ==> window 
+      2. In method  : this ==> owner object
+          Depends on function type and its nested structure
+      3. In constructor : this ==> new instance.
+
+# this scope depends on function type and its nested structure :
+  # Type of function:
+   1. Normal function : (function declaration & expression)
+    - 'this' value is dynamic
+    - Depends on how/where the function is called
+
+   2. Arrow function :
+    - 'this' value is static
+    - Depends on the where the function is declared/written
+    - Enclosing lexical context/scope        
+
+*/
+
+
+**Regular functions : have their own `this` context which can change depending 
+on how they are called. 
+In strict mode, if called without a context, `this` is `undefined`.
+
+**Arrow functions : do not have their own `this` context. 
+They inherit `this` from the surrounding lexical context 
+where the arrow function is defined, which avoids 
+the issue of `this` being `undefined` in strict mode.

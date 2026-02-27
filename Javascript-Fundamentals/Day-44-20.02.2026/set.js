@@ -51,7 +51,7 @@ console.log(setObj2); // Set(1) { 'TS' }
 console.log(setObj2.clear());
 console.log(setObj2); // Set(0) {}
 
-
+console.log("------------------------")
 /* 
 Deloitte QA Automation pune 5+ yrs exp:
 
@@ -61,3 +61,21 @@ let marks = [-5, 6, 3, -2, 0];
 sort -> [6, 3, 0, -2, -5]; --> sort name array based on marks array     
 
 */
+
+let names = ["Ram", "Shyam", "Hari", "Ram", "Mira"];
+let marks = [-5, 6, 3, -2, 0];
+
+// let sortMarks = marks.sort()
+// // combine arrays
+// names.sort().forEach(function(el,index){
+//  console.log(`${el}:${sortMarks[index]}`)
+// })
+
+
+let combined = names.map((n,i)=>[n,marks[i]]);
+
+combined.sort((a,b)=>b[1]-a[1]);
+
+combined.forEach(([name,mark])=>{
+  console.log(`${name}:${mark}`)
+});

@@ -30,37 +30,37 @@ let arr = [1, 5, "Hi"]
 
 // splice(pos, deleteCount, ...items) 
 
-// arr.splice(3, 0, "JS")
-// arr.splice(3, 0, "JS", "TS")
-// arr.splice(3, 1, "JS", "TS")
-// arr.splice(2, 1, "JS", "TS")
-// console.table(arr)
+arr.splice(3, 0, "JS")
+arr.splice(3, 0, "JS", "TS")
+arr.splice(3, 1, "JS", "TS")
+arr.splice(2, 1, "JS", "TS")
+console.table(arr)
 
 // slice(startIndex, endIndex(Excluding))
-// console.log(arr.slice(1, 2)) // [ 5 ]
-// console.log(arr.slice(1, 3)) // [ 5, 'Hi' ]
-// console.log(arr.slice()) // [ 1, 5, 'Hi' ]
-// console.log(arr.slice(1)) // [ 5, 'Hi' ]
-// console.log(arr) // [ 1, 5, 'Hi' ]
+console.log(arr.slice(1, 2)) // [ 5 ]
+console.log(arr.slice(1, 3)) // [ 5, 'Hi' ]
+console.log(arr.slice()) // [ 1, 5, 'Hi' ]
+console.log(arr.slice(1)) // [ 5, 'Hi' ]
+console.log(arr) // [ 1, 5, 'Hi' ]
 
 // concat(...items)     
 let arr2 = [1, 2, 3, 4]
-// let newArr = arr2.concat("Hi", "Js")
-// console.log(newArr); // [ 1, 2, 3, 4, 'Hi', 'Js' ]
-// console.log(arr2); // [ 1, 2, 3, 4 ]
+let newArr = arr2.concat("Hi", "Js")
+console.log(newArr); // [ 1, 2, 3, 4, 'Hi', 'Js' ]
+console.log(arr2); // [ 1, 2, 3, 4 ]
 
 // flat() 
 // 2D array
 let arr2D = [1, 2, [3, 4], 5, [6, 7]]
-// console.table(arr2D.flat())
-// console.table(arr2D)
+console.table(arr2D.flat())
+console.table(arr2D)
 
 // reverse() 
-// arr = [1, 5, "Hi"]
-// console.log(arr.reverse()) // [ 'Hi', 5, 1 ]
+arr = [1, 5, "Hi"]
+console.log(arr.reverse()) // [ 'Hi', 5, 1 ]
 
 let reversedStr = "str".split("").reverse().join("");
-// console.log(reversedStr); // rts
+console.log(reversedStr); // rts
 
 //  copyWithin(copyPointIndex, copyStartIndex, copyEndIndex);
 /* 
@@ -73,9 +73,9 @@ Does not change array length
 
 arr = [1, 5, "Hi", "JS", "TS"]
 
-// console.table(arr.copyWithin(1, 2, 3)) // [1, "Hi", "Hi", "JS", "TS"]
-// console.table(arr.copyWithin(1, 2)) // [1, "Hi", "JS", "TS"]
-// console.log(arr)
+console.table(arr.copyWithin(1, 2, 3)) // [1, "Hi", "Hi", "JS", "TS"]
+console.table(arr.copyWithin(1, 2)) // [1, "Hi", "JS", "TS"]
+console.log(arr)
 
 /* 
     * search value:
