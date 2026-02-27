@@ -13,3 +13,4 @@ console.log("First Name is:"+fName+ " and last name is:" +lName)
 console.log(`First Name is:${fName} and last Name is:${lName}`)
 console.log(`${1+1}`)
 console.log(2+2)
+
