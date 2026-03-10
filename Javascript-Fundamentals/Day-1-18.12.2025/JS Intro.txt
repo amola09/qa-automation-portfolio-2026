@@ -17,8 +17,9 @@
 - Dynamically typed,synchronous,single threaded(1 call stack), versatile scripting language
 - versatile(used for clint and server side).
 
-- only browser can understand the js. How ?
+- only browser can understand the .js How ?
 - js Engine 
+
 // default browser can read js.
 // js is browser language
 // browser have its own execution engine
