@@ -170,3 +170,52 @@ function getFirstNm(d1,...d3){
     console.log(d1)
 }
 getFirstNm(...names1)
+
+//08.03.2026
+const user = {
+  name1: 'John Doe',
+  email: 'john@example.com',
+  age: 30
+};
+let {name1,email,age} = user
+console.log(name1)
+console.log(email)
+console.log(age)
+
+
+const product = {
+  name2: 'Laptop',
+  price: 999.99,
+  quantity: 5
+};
+let {name2,price,quantity} = product
+console.log(name2)
+console.log(price)
+console.log(quantity)
+
+const car = {
+  make: 'Toyota',
+  model: 'Camry',
+  year: 2022
+};
+let {make,model,year} = car
+console.log(make)
+console.log(model)
+console.log(year)
+
+
+function displayCar({make,model,year}){
+    console.log(make)
+    console.log(model)
+    console.log(year)
+}
+displayCar(car)
+
+let carNames = ["Innova","Swift","Scorpio","Cruiser","Nano"]
+function cName(d1,d2,d3,...d4){
+    console.log(d1)
+    console.log(d2)
+    console.log(d3)
+    console.log(d4)
+}
+cName(...carNames)
